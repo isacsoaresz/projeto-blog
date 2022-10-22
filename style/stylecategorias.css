@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: roboto-regular;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: roboto-medium;
+    src: url(../fonts/Roboto-Medium.ttf);
+}
+
+:root{
+    --cor1: #1E73BE;
+    --cor2: #395593;
+    --cor3: #2B3F6A;
+    --cor4: #666666;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--cor1);
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+nav{
+    background-color: var(--cor1);
+    padding: 16px;
+    box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.363);
+}
+
+nav a{
+    text-decoration: none;
+    padding: 6px;
+    color: white;
+    margin-left: 10px;
+    font-weight: bold;
+    transition-duration: 0.3s;
+}
+
+nav a:hover{
+    background-color: var(--cor2);
+    border-radius: 5px;
+}
+
+main h1{
+    color: var(--cor4);
+    font-family: roboto-medium;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.178);
+    background-image: linear-gradient(to right, rgba(128, 128, 128, 0.329), transparent);
+    border-radius: 5px;
+}
+
+.categorias{
+    padding-left: 50px;
+}
+
+.guia{
+    margin-bottom: 20px;
+}
+
+main h2{
+    color: var(--cor4);
+    font-family: roboto-regular;
+    padding: 10px 0px 10px 10px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.178);
+}
+
+main p{
+    font-size: 18px;
+}
+
+.maincategorias p{
+    font-size: 18px;
+    max-width: 400px;
+}
+
+main{
+    margin: auto;
+    margin-bottom: 30px;
+    min-width: 300px;
+    max-width: 1000px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.411);
+    border-radius: 0px 0px 10px 10px;
+}
+
+.img-anime{
+    width: 400px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.507);
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+ul li{
+    padding: 10px;
+    font-family: roboto-regular;
+    overflow: hidden;
+}
+
+ul li:hover img{
+    transform: scale(1.03);
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+
+footer{
+    background-color: var(--cor3);
+    color: white;
+    padding: 5px;
+    font-size: 0.8;
+    text-align: center;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover{
+    color: var(--cor4);
+}
+
+div.video{
+    background-color: var(--cor2);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 58%;
+    position: relative;
+}
+
+div.video iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
